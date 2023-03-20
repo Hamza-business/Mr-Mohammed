@@ -121,7 +121,33 @@ i{
     background-image: linear-gradient(to bottom right, var(--bDarkbg), var(--bLightbg));
     padding-bottom: 0;
     margin-bottom: 0;
-    overflow-y: hidden;
+    overflow: hidden;
+}
+.hero.home::before {
+    content: "";
+    position: absolute;
+    width: 900px;
+    height: 900px;
+    border-radius: 100%;
+    top: -110px;
+    left: -370px;
+    opacity: 0.5;
+    background: radial-gradient(ellipse at center, rgba(0,95,252,0.6) 0%, rgba(0,95,252,0.6) 0%, rgba(0,95,252, 0) 68%, rgba(0,95,252, 0) 100%);
+    -webkit-background: radial-gradient(ellipse at center, rgba(0,95,252,0.6) 0%, rgba(0,95,252,0.6) 0%, rgba(0,95,252, 0) 68%, rgba(0,95,252, 0) 100%);
+    z-index: 1;
+}
+.hero.home::after {
+    content: "";
+    position: absolute;
+    width: 900px;
+    height: 900px;
+    border-radius: 100%;
+    top: -240px;
+    right: -390px;
+    opacity: 0.3;
+    background: radial-gradient(ellipse at center, rgba(255, 227, 0, 0.6) 0%, rgba(255, 230, 25, 0.6) 0%, rgba(255,82,25, 0) 68%, rgba(255, 241, 25, 0) 100%);
+    -webkit-background: radial-gradient(ellipse at center, rgba(255, 227, 0, 0.6) 0%, rgba(255, 230, 25, 0.6) 0%, rgba(255,82,25, 0) 68%, rgba(255, 241, 25, 0) 100%);
+    z-index: 1;
 }
 .hero.home .title{
     color: var(--whiteBg);
@@ -141,18 +167,17 @@ i{
 }
 .hero.home .column img{
     width: auto;
-    height: 475px;
     padding-top: 20px;
     padding-bottom: 5px;
 }
 .hero.home .column.is-5, .hero.home .column.oo {
-    padding-top: 140px !important;
+    padding-top: 110px !important;
     padding-bottom: 0 !important;
     margin-top: 10px !important;
     margin-bottom: 0 !important;
 }
 .hero.home .column.oo {
-    padding-top: 80px !important;
+    padding-top: 45px !important;
     padding-bottom: 0 !important;
     margin-bottom: 0 !important;
     padding-right: 50px;
@@ -238,56 +263,42 @@ i{
     border: 20px solid var(--yellow);
 } */
 
-@media(max-width: 1218px){
-    .hero.home .column img {
-        width: 325px  !important;
+@media(max-width: 1210px){
+    .hero.home .column.is-5, .hero.home .column.oo {
+        padding-top: 70px !important;
+    }
+    .hero.home .column.oo {
+        padding-top: 20px !important;
+        padding-right: 15px;
+    }
+    .hero.home .columns .column.img {
+        padding-left: 0;
     }
 }
 
-@media(max-width: 1210px){
-    .hero.home .column img {
-        width: auto;
-        height: 435px;
-    }
-    .hero.home .column.is-5, .hero.home .column.oo {
-        padding-top: 120px !important;
-    }
-    .hero.home .column.oo {
-        padding-top: 60px !important;
-    }
-}
-@media(max-width: 1035px){
-    .hero.home .column.img{
-        padding-left: 0 !important;
-        padding-right: 0 !important;
-    }
-    .container {
-        padding-left: 15px;
-        padding-right: 25px;
-      }
-}
 @media(max-width: 974px){
-    .hero.home .column img {
-        height: 400px;
-    }
     .hero.home .column.oo {
         width: 29%;
         padding-right: 20px;
     }
+    .hero.home .column.is-4.img {
+        padding-bottom: 30px;
+    }
 }
 @media(max-width: 882px){
+    .hero.home .column.is-4.img {
+        padding-bottom: 30px;
+        padding-top: 30px;
+    }
     .hero.home .column.oo {
         width: 31%;
         padding-right: 5px;
     }
-    .hero.home .column img {
-        height: 365px;
-    }
     .hero.home .column.is-5, .hero.home .column.oo {
-        padding-top: 90px !important;
+        padding-top: 40px !important;
     }
     .hero.home .column.oo {
-        padding-top: 40px !important;
+        padding-top: 0px !important;
     }
     .hero.home {
         overflow: hidden;
@@ -295,9 +306,6 @@ i{
 }
 
 @media(max-width: 770px){
-    .hero.home .column img {
-        height: 460px;
-    }
     .hero.home .column.is-6 {
         width: 100% !important;
         min-width: 220px;
@@ -317,8 +325,11 @@ i{
     .hero.home .columns .column.img {
         direction: ltr;
         text-align: left;
-        margin-top: -390px;
-        margin-left: -20px;
+        margin-top: -420px;
+        margin-left: 0 !important;
+    }
+    .hero.home .columns .column.img img{
+        width: 400px;
     }
     .hero.home .column.is-5{
         padding-top: 40px !important;
@@ -327,37 +338,23 @@ i{
         padding-top: 5px !important;
     }
 }
-@media(max-width: 708px){
+@media(max-width: 684px){
     .hero.home .columns .column.img {
-        margin-top: -280px;
+        margin-top: -345px;
+        margin-left: -35px !important;
     }
 }
-@media(max-width: 543px){
+@media(max-width: 560px){
     .hero.home .columns .column.img {
-        direction: ltr;
-        text-align: left;
-        margin-top: -300px;
-        margin-left: -80px;
+        margin-top: -190px;
     }
 }
 @media(max-width: 450px){
     .hero.home .columns .column.img {
-        margin-top: -110px !important;
-        margin-left: -90px !important;
+        margin-top: -65px;
     }
-    .hero.home .column img{
-        height: 400px !important;
-        width: 320px !important;
-    }
-}
-@media(max-width: 380px){
     .hero.home .columns .column.img {
-        margin-top: -50px !important;
-        margin-left: -95px !important;
-    }
-    .hero.home .column img{
-        height: 420px !important;
-        width: 320px !important;
+        margin-left: 0 !important;
     }
 }
 
@@ -546,7 +543,11 @@ i{
     padding-bottom: 40px;
     background-color: var(--graySh);
 }
-
+.card-image .image {
+    display: block;
+    position: relative;
+    width: 100%;
+}
 
 
 .hero-Lect {
@@ -605,7 +606,7 @@ i{
 .card-content{
     padding: 15px 0 0 !important;
 }
-.card .card-content .tag.is-gold{
+.tag.is-gold{
     margin-top: 10px;
     margin-bottom: 10px;
     background-color: var(--logogold30);
@@ -687,4 +688,99 @@ i{
   font-size: 18px !important;
   font-weight: 500;
   color: var(--lightBg);
+}
+
+
+
+
+
+.hero.lecture{
+    background: url('/assets/images/bg.png'), linear-gradient(to bottom right, var(--bDarkbg), var(--bLightbg));
+    overflow-y: hidden;
+    background-size: contain;
+    background-position: center;
+}
+.hero.lecture::before {
+    content: "";
+    position: absolute;
+    width: 600px;
+    height: 600px;
+    border-radius: 100%;
+    top: -53px;
+    left: -370px;
+    opacity: 0.4;
+    background: radial-gradient(ellipse at center, rgba(0, 252, 158, 0.87) 0%, rgba(0, 252, 228, 0.7) 0%, rgba(0,95,252, 0) 68%, rgba(0,95,252, 0) 100%);
+    -webkit-background: radial-gradient(ellipse at center, rgba(0, 252, 158, 0.87) 0%, rgba(0, 252, 228, 0.7) 0%, rgba(0,95,252, 0) 68%, rgba(0,95,252, 0) 100%);
+    z-index: 1;
+}
+.hero.lecture::after {
+    content: "";
+    position: absolute;
+    width: 600px;
+    height: 600px;
+    border-radius: 100%;
+    top: -260px;
+    right: -360px;
+    opacity: 0.4;
+    background: radial-gradient(ellipse at center, rgba(255, 227, 0, 0.6) 0%, rgba(255, 230, 25, 0.6) 0%, rgba(255,82,25, 0) 68%, rgba(255, 241, 25, 0) 100%);
+    -webkit-background: radial-gradient(ellipse at center, rgba(255, 227, 0, 0.6) 0%, rgba(255, 230, 25, 0.6) 0%, rgba(255,82,25, 0) 68%, rgba(255, 241, 25, 0) 100%);
+    z-index: 1;
+}
+.hero.lecture h1{
+    color: var(--logogold60);
+}
+.hero.lecture p{
+    color: var(--whiteBg);
+    padding-top: 20px;
+    font-weight: 300;
+}
+.hero.lecture .hero-body {
+    margin-top: 60px;
+    margin-bottom: 55px;
+}
+.hero.lecture .hero-body {
+    padding: 0rem 3rem;
+}
+.tags {
+    margin-top: 15px;
+}
+.tags .tag{
+    opacity: 0.9;
+}
+.hero.lecture .subtitle.is-3 {
+    font-size: 2rem;
+    font-weight: 400 !important;
+    padding-top: 0px !important;
+}
+.hero.lecture .subtitle.is-3 span{
+    font-size: 2.2rem;
+    font-weight: 600 !important;
+    color: var(--logogold30);
+
+}
+@media(max-width: 600px){
+    .hero.lecture .hero-body {
+        padding: 0rem 0rem;
+    }
+    .hero.lecture::before {
+        width: 400px;
+        height: 400px;
+        top: 350px;
+        left: -254px;
+    }
+}
+
+.holota .column.is-4 {
+    border-right: 5px solid var(--bLightbg);
+    transition: box-shadow 0.5s;
+}
+.holota .column.is-4:hover {
+    box-shadow: -3px 0px 10px 0px var(--logogold30);
+}
+.container{
+    padding-left: 20px;
+    padding-right: 20px;
+}
+.cardes.holota .column {
+    margin-bottom: 10px;
 }
