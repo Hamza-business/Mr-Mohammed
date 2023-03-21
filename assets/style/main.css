@@ -1153,3 +1153,43 @@ i{
         overflow-y: scroll;
     }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.loginForm{
+    padding-top: 60px;
+    padding-bottom: 60px;
+    background-image: linear-gradient(to bottom right, var(--bDarkbg), var(--bLightbg));
+}
+.column.former {
+    padding: 40px 30px;
+    border-radius: 15px;
+    background-color: #f4f4f4;
+    box-shadow: 0px 2px 14px var(--logogold30);
+}
+.loginForm .container {
+    padding-left: 30px;
+    padding-right: 35px;
+}
