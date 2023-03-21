@@ -76,6 +76,86 @@ i{
 
 }
 
+
+.navbar {
+    padding-right: 25px;
+    padding-left: 25px;
+    border-bottom: 2px solid var(--bLightbg);
+    width: 100%;
+    position: fixed !important;
+    top: 0 !important;
+    background: transparent !important;
+    transition: background 0.5s;
+}
+.button.navButton {
+    padding: 7px 20px !important;
+    height: fit-content;
+}
+.button.navButton.is-outlined{
+    color: var(--whiteBg) !important;
+}
+.button.navButton.is-outlined:hover{
+    color: var(--whiteBg) !important;
+    box-shadow: inset 0px 0px 25px 20px var(--logogold30), 0px 0px 5px var(--logogold30) !important;
+}
+@media (max-width: 1024px){
+    #navbarBasicExample {
+        background-color: #2f353ecc;
+        margin-top: 25px;
+    }
+    .navbar .navbar-item{
+        padding: 7px 20px !important;
+    }
+    .navbar .buttons{
+        margin-top: 20px;
+    }
+    .navbar-item:hover {
+        background-color: transparent !important;
+    }
+}
+.navbar-item:hover {
+    background-color: var(--bLightbg) !important;
+}
+.navbar.moved{
+    background-color: #15181dc9 !important;
+}
+.acc i{
+    font-size: 35px !important;
+}
+.navbar-end .navbar-item:hover{
+    background-color: transparent !important;
+}
+.navbar-item, .navbar-item.logo  {
+    padding-bottom: 0 !important;
+    padding-top: 0 !important;
+}
+.navbar-item.logo  {
+    margin-bottom: -35px;
+}
+.navbar-item{
+    color: #dadada !important;
+    font-size: 15px;
+    margin-left: 10px;
+}
+.navbar-item i{
+    padding-left: 5px;
+    font-size: 12px;
+}
+.navbar-item img {
+    max-height: 5rem !important;
+    padding-top: 2px;
+    padding-bottom: 2px;
+}
+
+
+
+
+
+
+
+
+
+
 .button {
     padding: 21px 28px !important;
 }
@@ -122,6 +202,7 @@ i{
     padding-bottom: 0;
     margin-bottom: 0;
     overflow: hidden;
+    padding-top: 35px;
 }
 .hero.home::before {
     content: "";
@@ -699,6 +780,7 @@ i{
     overflow-y: hidden;
     background-size: contain;
     background-position: center;
+    padding-top: 60px;
 }
 .hero.lecture::before {
     content: "";
@@ -1179,7 +1261,7 @@ i{
 
 
 .loginForm{
-    padding-top: 60px;
+    padding-top: 100px;
     padding-bottom: 60px;
     background-image: linear-gradient(to bottom right, var(--bDarkbg), var(--bLightbg));
 }

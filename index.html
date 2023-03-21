@@ -18,7 +18,37 @@
 </head>
 <body>
     
-    <nav></nav>
+    <nav class="navbar" role="navigation" aria-label="main navigation">
+        <div class="navbar-brand">
+            <a class="navbar-item logo" href="/">
+                <img src="/assets/images/logos/logo.png">
+            </a>
+        
+            <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample" onclick="navshow()" wfd-invisible="true">
+                <span aria-hidden="true"></span>
+                <span aria-hidden="true"></span>
+                <span aria-hidden="true"></span>
+            </a>
+        </div>
+        
+        <div id="navbarBasicExample" class="navbar-menu">
+            <div class="navbar-start">
+                <a class="navbar-item" href="/"><i class="fas fa-home"></i> الرئيسية</a>
+                <a class="navbar-item" href="/lectures/"><i class="fas fa-tv"></i> المحاضرات</a>
+                <a class="navbar-item" href="/aboutus/"><i class="fa-regular fa-address-card"></i> من نحن</a>
+            </div>
+        
+            <div class="navbar-end">
+                <div class="navbar-item">
+                    <a class="navbar-item acc" href="/account"><i class="fas fa-user-circle"></i></a>
+                    <div class="buttons">
+                        <a class="button is-gold navButton shadowed" href="/login">تسجيل دخول</a>
+                        <a class="button is-gold is-outlined navButton" href="/register">حساب جديد</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
 
     <section class="hero home">
         <div class="hero-body">
@@ -77,7 +107,7 @@
                         <div class="is-flex is-flex-direction-row" data-aos="zoom-out">
                             <div class="iconCont"><i class="fa-solid fa-star"></i></div>
                             <div>
-                                <p class="subtitle is-6">تقيم المنصة مستر محمد رضوان</p>
+                                <p class="subtitle is-6">تقيم المنصه</p>
                                 <p class="title is-4">5<sub>/6</sub></p>
                             </div>
                         </div>
