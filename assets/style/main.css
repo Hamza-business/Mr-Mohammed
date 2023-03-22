@@ -344,7 +344,7 @@ i{
     border: 20px solid var(--yellow);
 } */
 
-@media(max-width: 1210px){
+/* @media(max-width: 1210px){
     .hero.home .column.is-5, .hero.home .column.oo {
         padding-top: 70px !important;
     }
@@ -365,9 +365,9 @@ i{
     .hero.home .column.is-4.img {
         padding-bottom: 30px;
     }
-}
+} */
 @media(max-width: 882px){
-    .hero.home .column.is-4.img {
+    /* .hero.home .column.is-4.img {
         padding-bottom: 30px;
         padding-top: 30px;
     }
@@ -383,11 +383,18 @@ i{
     }
     .hero.home {
         overflow: hidden;
-    }   
+    }    */
+    .column.is-4.img {
+        width: 350px;
+    }
+    .hero.home .column img {
+          margin-left: 50px;
+      
+    }
 }
 
 @media(max-width: 770px){
-    .hero.home .column.is-6 {
+    /* .hero.home .column.is-6 {
         width: 100% !important;
         min-width: 220px;
     }
@@ -417,27 +424,51 @@ i{
     }
     .hero.home .column.oo {
         padding-top: 5px !important;
+    } */
+    .column.is-4.img {
+        width: 100%;
+        margin-top: -200px;
+        padding: 40px;
+    }
+    .hero.home .column img {
+        margin-left: 0;
+    }
+    .hero.home::before {
+        width: 600px;
+        height: 300px;
+    }
+    .hero.home::after {
+        width: 800px;
+        height: 500px;
+        top: 0px;
+        right: -390px;
     }
 }
-@media(max-width: 684px){
+@media(max-width: 400px){
+    .column.is-4.img {
+        margin-top: -180px;
+        padding: 10px;
+    }
+}
+/* @media(max-width: 684px){
     .hero.home .columns .column.img {
         margin-top: -345px;
         margin-left: -35px !important;
     }
-}
-@media(max-width: 560px){
+} */
+/* @media(max-width: 560px){
     .hero.home .columns .column.img {
         margin-top: -190px;
     }
-}
-@media(max-width: 450px){
+} */
+/* @media(max-width: 450px){
     .hero.home .columns .column.img {
         margin-top: -65px;
     }
     .hero.home .columns .column.img {
         margin-left: 0 !important;
     }
-}
+} */
 
 
 .headerT{
@@ -1260,6 +1291,7 @@ i{
 
 
 
+
 .loginForm{
     padding-top: 100px;
     padding-bottom: 60px;
@@ -1274,4 +1306,179 @@ i{
 .loginForm .container {
     padding-left: 30px;
     padding-right: 35px;
+}
+
+
+
+
+
+
+
+
+
+
+
+.Payways{
+    background-image: linear-gradient(to bottom right, var(--bDarkbg), var(--bLightbg))
+}
+.Payways .hero-body {
+    padding: 1rem 3rem;
+}
+.isPay{
+    border: 1px solid var(--main-color);
+}
+.isPay .isT{
+    margin-bottom: 10px;
+}
+.isPay .inputField{
+    margin-top: 15px;    
+    margin-bottom: 15px; 
+}
+.isPay input{
+    width: 200px;   
+    margin-left: 10px; 
+}
+.isPay .selectedShow {
+    border-radius: 10px;
+    border: 2px dashed var(--logogold30);
+    margin-top: 10px;
+    margin-bottom: 0 !important;
+    cursor: pointer;
+    margin-left: 2px;
+    opacity: 0.8;
+    transition: 0.5s;
+    margin-right: 0px;
+    background-color: var(--bLightbg);
+}
+.isPay .selectedShow *{
+    color: var(--logogold60);
+}
+.isPay .selectedShow.active {
+    border-bottom: none;
+    border-radius: 10px 10px 0 0;
+}
+.isPay .selectedShow:hover {
+    opacity: 1;
+    border-color:#777777;
+}
+.isPay .column.is-1.is-size-5 i {
+    margin-top: 14px;
+    font-size: 25px;
+    padding: 0;
+    transition: 0.5s;
+}
+.isPay .column.is-1.is-size-5 i.active {
+    rotate: 90deg;
+}
+.isPay .inpu {
+    border: 0;
+    font-size: 15px;
+    width: auto;
+}
+.isPay .notes {
+    margin-top: 10px;
+}
+.isPay .foct {
+    font-size: 14px;
+}
+.isPay .fost {
+    font-weight: 700;
+    font-size: .875em;
+}
+.pySection {
+    border-right: 2px dashed var(--logogold30);
+    border-left: 2px dashed var(--logogold30);
+    padding: 0 !important;
+    margin-left: 2px;
+    transition: 0.5s;
+    padding: 0;
+    padding-top: 0px;
+    height: 0;
+    overflow: hidden;
+    background-color: #484c52;
+}
+.paywayo *{
+    color: var(--greenLL) !important;
+}
+.pySection.active {
+    padding: 0.75rem !important;
+    padding-top: 10px;
+    height: max-content;
+    border-bottom: 2px dashed var(--logogold30);
+}
+.pySection:hover {
+    border-color: #777777;
+}
+.pySection div{
+    opacity: 0.8;
+    transition: 0.2s;
+    cursor: pointer;
+}
+.pySection div:hover{
+    opacity: 1;
+}
+.pySection .paywayo {
+    border-top: 1px solid var(--main-color) !important;
+    padding: 10px 20px !important;
+}
+.pySection .paywayo.active {
+    background-color: #fff;
+    opacity: 1;
+}
+.pySection .paywayo:hover {
+    background-color: #fff;
+}
+.pySection .paywayo:hover *, .pySection .paywayo.active * {
+    color: var(--bLightbg) !important;
+}
+.pySection .paywayo .img1W {
+    -ms-transform: scale(2); 
+    -webkit-transform: scale(2); 
+    transform: scale(2);
+    margin-top: 10px;
+}
+.pySection .paywayo input {
+    float:left; 
+    margin-top: 9px;
+    vertical-align: middle; 
+    -ms-transform: scale(1.5); 
+    -webkit-transform: scale(1.5); 
+    transform: scale(1.5);
+}
+.pySection .paywayo .imgContW {
+    float:left;
+    height:20px;
+    width:30px;
+}
+.pySection .radio {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0px;
+    top: 0;
+}
+.pySection .radio input{
+    opacity: 0;
+}
+.pySection .subtitle.is-6 {
+    font-size: 1rem;
+    margin-bottom: 1rem;
+}
+.pySection .paywayo{
+    position: relative
+}
+@media (max-width: 440px){
+    .Payways .hero-body{
+        padding-left: 10px;
+        padding-right: 1px;
+    }
+    
+}
+.Payways .box {
+    background-color: rgba(252, 252, 252, 0.918);
+    border-radius: 6px;
+    box-shadow: 0 0.5em 1em -0.125em rgba(255, 240, 9, 0.41), 0 0px 0 1px rgba(255, 240, 9, 0.41);
+}
+.is-gold{
+    color: var(--logogold60);
 }
