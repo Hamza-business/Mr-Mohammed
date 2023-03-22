@@ -47,135 +47,45 @@
                 </div>
 
                 <section class="tapss1">
-                    <div class="container">
-                        <div class="mytabs">
-                            <input type="radio" id="Description" name="mytabs" checked="checked">
-                            <label for="Description" class="tabfree">الوصف</label>
-                            <div class="tab">
-                                <h3 class="title is-3">الوصف</h3>
-                                <p class="discription">
-                                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. In obcaecati iste saepe repellat aut dicta animi qui consequatur, veniam earum! Ex reiciendis possimus doloremque dolorum quos molestiae error libero fuga.
-                                </p>
-                            </div>
-                        
-                            <input type="radio" id="Notes" name="mytabs">
-                            <label for="Notes" class="tabfree">الملاحظات</label>
-                            <div class="tab">
-                                <h3 class="title is-3">الملاحظات</h3>
-                                <p class="discription">
-                                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. In obcaecati iste saepe repellat aut dicta animi qui consequatur, veniam earum! Ex reiciendis possimus doloremque dolorum quos molestiae error libero fuga.
-                                </p>
-                            </div>
-                        
-                            <input type="radio" id="Files" name="mytabs">
-                            <label for="Files" class="tabfree">الملفات</label>
-                            <div class="tab">
-                                <h3 class="title is-3">الملفات</h3>
-                                <p class="discription">
-                                    <a href="">Download File</a>
-                                    <a href="">Download File</a>
-                                    <a href="">Download File</a>
-                                </p>
-                            </div>
-
-                            <input type="radio" id="Quiz" name="mytabs">
-                            <label for="Quiz" class="tabfree">الامتحان</label>
-                            <div class="tab">
-                                <h3 class="title is-3">الامتحان</h3>
-                                <p class="discription">
-                                    <a href="" class="quizLink"><i class="fas fa-vial"></i> Quiz Name</a>
-                                </p>
-                            </div>
-
-                            <input type="radio" id="Questions" name="mytabs">
-                            <label for="Questions" class="tabfree">الاسئلة</label>
-                            <div class="tab">
-                                <h3 class="title is-3">الاسئلة</h3>
-
-                                <div class="formASK">
-                                    <div class="field">
-                                        <label class="label">سؤال</label>
-                                        <div class="control">
-                                            <textarea class="textarea" placeholder="Question"></textarea>
-                                        </div>
-                                    </div>
-                    
-                                    <div class="field">
-                                        <div id="file-upload" class="file has-name">
-                                            <label class="file-label">
-                                                <input class="file-input" type="file" id="uploader1" name="resume">
-                                                <span class="file-cta is-bg-purpel">
-                                                    <span class="file-icon">
-                                                        <i class="fas fa-upload"></i>
-                                                    </span>
-                                                    <span class="file-label">رفع صورة</span>
-                                                </span>
-                                                <span class="file-name" id="filesName">لاتوجد صور</span>
-                                            </label>
-                                        </div>
-                                    </div>
-                    
-                                    <div class="field is-grouped">
-                                        <div class="control">
-                                            <button class="button buy">ارسال السؤال</button>
-                                        </div>
-                                    </div>
-                                </div>
-
-                                
-                                <p class="showQues " onclick="document.querySelector('.otherQus').classList.toggle('active')">اظهار باقي الاسئلة</p>
-                                <div class="otherQus">
-
-                                    <!-- Comment container -->
-                                    <div class="media-content mediaContainer">
-                                        <!-- Ask container -->
-                                        <div class="content">
-                                            <p>
-                                                <strong>اسم الطالب</strong>
-                                                <br>
-                                                <span class="YourMessage">ايها الدعم الفني العظييييم لقد جائني ايرور كبيييير ايرور 404</span>
-                                                <br>
-                                                <img src="https://via.placeholder.com/400x200" class="feedbackImage" alt=""><br>
-                                                <small class="">1985/10/1</small>
-                                            </p>
-                                        </div>
-                                
-                                        <!-- Answer container -->
-                                        <article class="media">
-                                            <figure class="media-left">
-                                                <img src="https://via.placeholder.com/45">
-                                            </figure>
-                                            <div class="media-content">
-                                                <div class="content">
-                                                    <p>
-                                                        <strong>م.محمد رضوان</strong>
-                                                        <br>
-                                                        <span class="YourMessage">ده ايرور بيجيلك لما متحلش الواجب ومتسمعش كلام المستر</span>
-                                                        <br>
-                                                        <small>2000/1/1 · <a>رد</a>
-                                                    </p>
-                                                </div>
-                                            </div>
-                                        </article>
-                                    </div>
-
-                                    <div class="media-content mediaContainer">
-                                        <!-- Ask container -->
-                                        <div class="content">
-                                            <p>
-                                                <strong>اسم الطالب</strong>
-                                                <br>
-                                                <span class="YourMessage">ايها الدعم الفني العظييييم لقد جائني ايرور كبيييير ايرور 404</span>
-                                                <br>
-                                                <img src="https://via.placeholder.com/400x200" class="feedbackImage" alt=""><br>
-                                                <small class="">1985/10/1</small>
-                                            </p>
-                                        </div>
-                                    </div>
-
-                                </div>
-                            </div>
+                    <div class="mytabs">
+                        <input type="radio">
+                        <label class="tabfree" onclick="showtab(0)">الوصف</label>
+                        <div class="tab active">
+                            <h3 class="title is-3">الوصف</h3>
+                            <p class="discription">
+                                Lorem, ipsum dolor sit amet consectetur adipisicing elit. In obcaecati iste saepe repellat aut dicta animi qui consequatur, veniam earum! Ex reiciendis possimus doloremque dolorum quos molestiae error libero fuga.
+                            </p>
                         </div>
+                    
+                        <input type="radio">
+                        <label class="tabfree" onclick="showtab(1)">الملاحظات</label>
+                        <div class="tab">
+                            <h3 class="title is-3">الملاحظات</h3>
+                            <p class="discription">
+                                Lorem, ipsum dolor sit amet consectetur adipisicing elit. In obcaecati iste saepe repellat aut dicta animi qui consequatur, veniam earum! Ex reiciendis possimus doloremque dolorum quos molestiae error libero fuga.
+                            </p>
+                        </div>
+                    
+                        <input type="radio">
+                        <label class="tabfree" onclick="showtab(2)">الملفات</label>
+                        <div class="tab">
+                            <h3 class="title is-3">الملفات</h3>
+                            <p class="discription">
+                                <a href="">Download File</a>
+                                <a href="">Download File</a>
+                                <a href="">Download File</a>
+                            </p>
+                        </div>
+
+                        <input type="radio">
+                        <label class="tabfree" onclick="showtab(3)">الامتحان</label>
+                        <div class="tab">
+                            <h3 class="title is-3">الامتحان</h3>
+                            <p class="discription">
+                                <a href="" class="quizLink"><i class="fas fa-vial"></i> Quiz Name</a>
+                            </p>
+                        </div>
+
                     </div>
                 </section>
             </div>
@@ -184,20 +94,3 @@
 
 </body>
 </html>
-<script src="https://code.jquery.com/jquery-3.5.1.js"></script>
-<!-- <script>
-    lecturesDo();
-    let uploader = document.getElementById("uploader1")
-    uploader.addEventListener('change',()=>{
-        document.getElementById("filesName").textContent = uploader.value.split("\\").at(-1)
-    })
-</script> -->
-<!-- <style>
-    body{
-        padding: 0;
-        overflow-y: hidden;
-    }
-    body, html {
-        overflow-y: clip !important;
-    }
-</style> -->

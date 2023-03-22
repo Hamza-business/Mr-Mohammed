@@ -1132,6 +1132,8 @@ i{
     background-color: transparent;
     padding-top: var(--main-padding);
     padding-bottom: var(--main-padding);
+    margin-top: 40px;
+    margin-bottom: 20px;
 }
 .tapss1 .discription{
     padding-left: 10px;
@@ -1146,11 +1148,21 @@ i{
     text-decoration: underline !important;
     color: var(--third-color);
     font-weight: 700;
+    display: block;
+}
+.tab h3{
+    color: var(--logogold30) !important;
+}
+.tab p{
+    color: var(--greenLL);
 }
 .mytabs {
     display: flex;
     flex-wrap: wrap;
     width: 100%;
+}
+.mytabs input[type="radio"]:checked {
+    background-color: var(--logogold30);
 }
 .mytabs input[type="radio"] {
     display: none;
@@ -1159,17 +1171,21 @@ i{
     padding: 10px 40px;
     color: var(--second-color);
     font-weight: bold;
+    border-radius: 0;
+}
+.mytabs .tabfree.active {
+    background-color: var(--logogold30);
     border-radius: 6px 6px 0 0;
 }
 .mytabs .tab {
     width: 100%;
     padding: 20px;
-    background: #fff;
+    background: var(--bLightbg);
     order: 1;
     display: none;
-    border-radius: 0 6px 6px 6px;
+    border-radius: 6px 0px 6px 6px;
 }
-.mytabs input[type='radio']:checked + label + .tab {
+.mytabs .tab.active {
     display: block;
 }
 .mytabs input[type="radio"]:checked + label {

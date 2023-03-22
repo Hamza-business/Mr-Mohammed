@@ -55,12 +55,29 @@ function payouts(){
 payouts()
 
 
-// setTimeout(() => {
-//     try{
-//         document.getElementById('pops-conatainer').style.display = 'none';
-//         document.querySelector('.trans').classList.remove("showNot");
-//     }catch{
-//         return 1
-//     }
+setTimeout(() => {
+    try{
+        document.getElementById('pops-conatainer').style.display = 'none';
+        document.querySelector('.trans').classList.remove("showNot");
+    }catch{
+        return 1
+    }
     
-// }, 10000);
+}, 10000);
+
+
+
+let tabs = Array(...document.querySelectorAll('.tab'));
+function showtab(num){
+    tabs.forEach((ele)=>{
+        ele.classList.remove('active')
+        ele.previousElementSibling.classList.remove('active')
+    })
+    tabs[num].classList.add('active')
+    tabs[num].previousElementSibling.classList.add('active')
+}
+
+
+
+
+
