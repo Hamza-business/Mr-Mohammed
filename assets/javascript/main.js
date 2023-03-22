@@ -53,3 +53,14 @@ function payouts(){
     }
 }
 payouts()
+
+
+// setTimeout(() => {
+//     try{
+//         document.getElementById('pops-conatainer').style.display = 'none';
+//         document.querySelector('.trans').classList.remove("showNot");
+//     }catch{
+//         return 1
+//     }
+    
+// }, 10000);

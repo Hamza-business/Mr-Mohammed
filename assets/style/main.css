@@ -1482,3 +1482,72 @@ i{
 .is-gold{
     color: var(--logogold60);
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+.pops-conatainer {
+    position: fixed;
+    top: 50%;
+    z-index: 230;
+    display: block;
+    transform: translateY(-50%);
+    z-index: 10000;
+}
+.notifications {
+    min-width: 320px;
+    max-width: 450px;
+    margin-right: -500px;
+}
+.notification{
+    padding: 1rem 1.5rem 1rem 2.5rem !important;
+}
+.notification.notifications.noti1.is-bg-red:hover, .panel-heading.is-bg-red:hover {
+    opacity: 1 !important;
+    background-color: var(--main-color) !important;
+}
+.noti1, .noti2, .noti3{
+    animation: NotiPop 8s !important;
+    animation-fill-mode: forwards !important;
+    animation-iteration-count: 1 !important;
+}
+.notification.notifications.noti1 {
+    background-color: rgba(255, 255, 255, 0.95) ;
+    color:  var(--pinkH) !important;
+    box-shadow: 0px 0px 6px 2px var(--pinkH);
+}
+.notification.notifications.noti2 {
+    background-color: rgba(255, 255, 255, 0.95);
+    color: var(--logogold30) !important;
+    box-shadow: 0px 0px 6px 2px var(--logogold30);
+}
+.notification.notifications.noti3 {
+    background-color: rgba(255, 255, 255, 0.95);
+    color: var(--greenL)!important;
+    box-shadow: 0px 0px 6px 2px var(--greenL);
+}
+@keyframes NotiPop {
+    0%{
+      margin-right: -500px;
+    }
+    15%{
+      margin-right: 10px;
+    }
+    90%{
+      opacity: 1;
+      margin-right: 10px;
+    }
+    100%{
+      margin-right: -500px;
+      opacity: 1;
+    }
+}
