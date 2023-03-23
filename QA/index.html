@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html dir="rtl" lang="ar">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>منصة مستر محمد رضوان </title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel="icon" type="image/png" href="/assets/images/logos/Vector-Presenting-to-smart-board.png"/>
+
+    <link rel='stylesheet' type='text/css' media='screen' href='/assets/style/main.css'>
+    <link rel='stylesheet' type='text/css' media='screen' href='/assets/style/all.min.css'>
+    <link rel='stylesheet' type='text/css' media='screen' href='/assets/style/bulma-rtl.css'>
+
+    <script src='/assets/javascript/main.js' defer></script>
+    <script src='/assets/javascript/navFooterLicenes.js' defer></script>
+
+</head>
+<body>
+
+    <div class="columns is-centered qa">
+        <div class="column is-8">
+            <div class="block container">
+                <section class="tapss1">
+                    <div class="mytabs">
+                        <div class="tab active">
+                            <h3 class="title is-3 has-text-centered">الاسئلة</h3>
+                            <div class="formASK">
+                                <div class="field">
+                                    <label class="label">السؤال</label>
+                                    <div class="control">
+                                        <textarea class="textarea" placeholder="تفاصيل سؤالك"></textarea>
+                                    </div>
+                                </div>
+                
+                                <div class="field">
+                                    <div id="file-upload" class="file has-name">
+                                        <label class="file-label">
+                                            <input class="file-input" type="file" id="upload" name="resume" multiple>
+                                            <span class="file-cta is-bg-purpel">
+                                                <span class="file-icon">
+                                                    <i class="fas fa-upload"></i>
+                                                </span>
+                                                <span class="file-label">اضافة صورة</span>
+                                            </span>
+                                            <div class="file-name" id="filesName">لم يتم رفع صور</div>
+                                        </label>
+                                    </div>
+                                </div>
+                
+                                <div class="field is-grouped">
+                                    <div class="control">
+                                        <a class="button is-gold shadowed">اضافة السؤال</a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            
+                            <p class="showQues " onclick="document.querySelector('.otherQus').classList.toggle('active')">عرض الاسئلة السابقة</p>
+                            <hr>
+                            
+                            <div class="otherQus">
+
+                                <!-- Comment container -->
+                                <div class="media-content mediaContainer">
+                                    <!-- Ask container -->
+                                    <div class="content">
+                                        <p>
+                                            <strong>اسم الطالب</strong>
+                                            <br>
+                                            <span class="YourMessage">ايها الدعم الفني العظييييم لقد جائني ايرور كبيييير ايرور 404</span>
+                                            <br>
+                                            <img src="https://via.placeholder.com/400x200" class="feedbackImage" alt=""><br>
+                                            <small class="">1985/10/1</small>
+                                        </p>
+                                    </div>
+                            
+                                    <!-- Answer container -->
+                                    <article class="media">
+                                        <figure class="media-left">
+                                            <img src="https://via.placeholder.com/45">
+                                        </figure>
+                                        <div class="media-content">
+                                            <div class="content">
+                                                <p>
+                                                    <strong>Mr Mohammed Ali</strong>
+                                                    <br>
+                                                    <span class="YourMessage">ده ايرور بيجيلك لما متحلش الواجب ومتسمعش كلام المستر</span>
+                                                    <br>
+                                                    <small>2000/1/1 · <a>رد</a></small>
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </article>
+                                </div>
+
+                                <div class="media-content mediaContainer">
+                                    <!-- Ask container -->
+                                    <div class="content">
+                                        <p>
+                                            <strong>اسم الطالب</strong>
+                                            <br>
+                                            <span class="YourMessage">ايها الدعم الفني العظييييم لقد جائني ايرور كبيييير ايرور 404</span>
+                                            <br>
+                                            <img src="https://via.placeholder.com/400x200" class="feedbackImage" alt=""><br>
+                                            <small class="">1985/10/1</small>
+                                        </p>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+</body>
+
+</html>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+<script>
+upload.onchange = function FileDetails() {
+    var fi = document.getElementById('upload');
+    if (fi.files.length > 0) {
+        document.querySelector('.file-name').innerHTML = `اجمالي الملفات: <b> ${fi.files.length} </b>`;
+        for (var i = 0; i <= fi.files.length - 1; i++) {
+            var fname = fi.files.item(i).name; 
+            document.querySelector('.file-name').innerHTML = 
+            `${document.querySelector('.file-name').innerHTML}${fname} | `;
+        }
+    }
+}
+</script>

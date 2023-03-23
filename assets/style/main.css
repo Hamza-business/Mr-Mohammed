@@ -1580,3 +1580,35 @@ i{
     padding-top: 0 !important;
     padding-bottom: 0 !important;
 }
+
+.qa{
+    background-image: linear-gradient(to bottom right, var(--bDarkbg), var(--bLightbg));
+    padding-top: 60px;
+    padding-bottom: 60px;
+    margin-bottom: 0 !important;
+}
+.qa .label, .qa strong {
+    color: var(--logogold30);
+}
+.qa img{
+    margin-top: 10px;
+}
+.file-name {
+  border-width: 1px 1px 1px 1px;
+  min-width: calc(100% - 141px);
+  color: var(--whiteBg);
+}
+.file-label {
+    width: 100%;
+}
+
+.qa .tab {
+    border-radius: 6px;
+}
+.file-label .file-cta {
+  background-color: var(--greenL) !important;
+  color: #363636;
+  border-radius: 0 5px 5px 0px !important;
+  border: none;
+  margin-left: 0px;
+}
