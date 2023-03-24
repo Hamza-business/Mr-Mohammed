@@ -1499,12 +1499,16 @@ i{
     border-radius: 6px;
     box-shadow: 0 0.5em 1em -0.125em rgba(255, 240, 9, 0.41), 0 0px 0 1px rgba(255, 240, 9, 0.41);
 }
-.is-gold{
-    color: var(--logogold60);
+.is-gold:not(.button.is-gold){
+    color: var(--logogold60) !important;
 }
 
-
-
+.table {
+    width: 100%;
+}
+tbody * {
+    font-weight: 500;
+}
 
 
 
@@ -1639,4 +1643,8 @@ i{
 .epay .icon.is-right {
     right: 0;
     margin-top: 5px;
+}
+.sheet .input:disabled{
+    background-color: #f1f1f1 !important;
+    border: 1px solid #c6c6c6 !important;
 }
