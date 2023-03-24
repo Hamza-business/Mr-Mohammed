@@ -1616,3 +1616,27 @@ i{
   border: none;
   margin-left: 0px;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.epay input{
+    width: 100%;
+    margin-top: 5px;
+}
+.epay .icon.is-right {
+    right: 0;
+    margin-top: 5px;
+}
