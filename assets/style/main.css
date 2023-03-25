@@ -780,7 +780,7 @@ i{
 
 .searchbars {
     background-color: var(--bLightbg);
-    padding: 40px 0;
+    padding: 90px 0 40px 0;
 }
 .searchbars .button.searchB{
     background-color: var(--logogold30);
