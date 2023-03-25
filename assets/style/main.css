@@ -1769,3 +1769,56 @@ footer img {
 .licens a:hover{
     color: var(--logogold60);
 }
+
+
+
+
+
+.error{
+    background-image: url('/assets/images/bg.png'), linear-gradient(to bottom right, var(--bDarkbg), var(--bLightbg)) !important;
+    padding-bottom: 80px;
+    min-height: 100vh;
+}
+.f1{
+    font-size: 180px;
+}
+.f2{
+    font-size: 160px;
+}
+.is-size-01{
+    font-size: 120px !important;
+}
+.deg5{
+    position: absolute;
+    top: 0;
+    left: calc(50% - 52px);
+    transform: rotate(40deg) !important;
+}
+.e {
+    position: absolute;
+    top: 0;
+    left: calc(50% - 135px);
+    transform: rotate(-15deg) !important;
+  margin-right: 20px;
+}
+.d {
+    margin-left: 125px;
+}
+.is-size-03{
+    position: relative;
+    font-size: 100px !important;
+}
+.error h1{
+    margin-bottom: 0px !important;
+}
+.error h2{
+    margin-top: 0px;
+    color: var(--logogold30);
+}
+.error h3{
+    color: var(--whiteBg) !important;
+    font-size: 20px;
+}
+.error .button{
+    color: var(--whiteBg) !important;
+}
