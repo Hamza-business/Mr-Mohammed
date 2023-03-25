@@ -669,6 +669,18 @@ i{
 }
 
 
+.lectss {
+    padding-top: 40px;
+    background-image: linear-gradient(to bottom right, #090806, #1c1909, #2f353e);
+    border-bottom: 2px solid var(--logogold60);
+}
+.lectss .hero-body{
+    margin-top: 40px;
+}
+.its-link{
+    text-decoration: underline !important;
+    cursor: pointer;
+}
 .hero-Lect {
     background-size: 130%;
 }
