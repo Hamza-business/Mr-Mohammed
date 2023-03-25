@@ -76,7 +76,49 @@ i{
     --logogold60: #f7941d; 
 
 }
+.button {
+    padding: 21px 28px !important;
+}
+.button.is-gold{
+    background-color: var(--logogold30);
+    border-color: var(--logogold30);
+}
+.button.is-gold.shadowed{
+    box-shadow: 0px 2px 14px var(--logogold30);
+    transition: box-shadow 0.3s;
+}
+.button.is-gold.shadowed:hover{
+    box-shadow: 0px 5px 10px var(--logogold30);
+    border-color: var(--logogold30);
+}
+.button.is-gold.is-outlined{
+    background-color: transparent;
+    border-color: var(--logogold30);
+    color: var(--lightBg);
+    box-shadow: inset 0px 0px 6px 0px var(--logogold30);
+    transition: box-shadow 0.3s;
+}
+.button.is-gold.is-outlined:hover{
+    box-shadow: inset 0px 0px 25px 20px var(--logogold30), 0px 5px 10px var(--logogold30);
+}
 
+*{
+    scrollbar-width: thin;
+}
+*::-webkit-scrollbar {
+    width: 7px;
+}
+*::-webkit-scrollbar-track {
+    background: var(--logogold30);
+    box-shadow: inset 0 0 6px var(--bLightbg);
+}
+*::-webkit-scrollbar-thumb {
+    background-color: var(--logogold30);
+    border-radius: 5px;
+}
+:root {
+    scrollbar-color: var(--logogold30) var(--bLightbg) !important;
+}
 
 .navbar {
     padding-right: 25px;
@@ -160,46 +202,7 @@ i{
 
 
 
-.button {
-    padding: 21px 28px !important;
-}
-.button.is-gold{
-    background-color: var(--logogold30);
-    border-color: var(--logogold30);
-}
-.button.is-gold.shadowed{
-    box-shadow: 0px 2px 14px var(--logogold30);
-    transition: box-shadow 0.3s;
-}
-.button.is-gold.shadowed:hover{
-    box-shadow: 0px 5px 10px var(--logogold30);
-    border-color: var(--logogold30);
-}
-.button.is-gold.is-outlined{
-    background-color: transparent;
-    border-color: var(--logogold30);
-    color: var(--lightBg);
-    box-shadow: inset 0px 0px 6px 0px var(--logogold30);
-    transition: box-shadow 0.3s;
-}
-.button.is-gold.is-outlined:hover{
-    box-shadow: inset 0px 0px 25px 20px var(--logogold30), 0px 5px 10px var(--logogold30);
-}
-/* *::-webkit-scrollbar {
-    width: 7px;
-}
-*::-webkit-scrollbar-track {
-    background: var(--second-color);
-    box-shadow: inset 0 0 6px var(--second-color);
-}
-*::-webkit-scrollbar-thumb {
-    background-color: #ff3333;
-    border-radius: 5px;
-}
-:root {
-    scrollbar-color: #ff3333 var(--second-color) !important;
-    scrollbar-width: thin !important;
-} */
+
 
 .hero.home{
     background-image: linear-gradient(to bottom right, var(--bDarkbg), var(--bLightbg));
@@ -1647,4 +1650,122 @@ tbody * {
 .sheet .input:disabled{
     background-color: #f1f1f1 !important;
     border: 1px solid #c6c6c6 !important;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.footer {
+    background-color: var(--second-color);
+    padding: 40px 24px 40px !important;
+}
+footer img {
+    width: 200px;
+}
+.licens a {
+    color: var(--main-color);
+    font-weight: bold;
+}
+.location {
+    margin-top: 16px;
+    margin-bottom: 5px;
+    margin-left: 10px;
+}
+.locationLink {
+    color: #535d75;
+    background-color: #f3f5e9;
+    border-radius: 5px;
+    padding: 6px 12px;
+    border: 1px solid var(--logogold30);
+    transition: 0.5s;
+}
+.locationLink:hover {
+    color: var(--logogold60) !important;
+    background-color: var(--bLightbg);
+}
+.locationLink label{
+    cursor: pointer;
+}
+.locationLink i {
+    font-size: 22px;
+    padding-left: 5px;
+}
+.locationLink:hover {
+    color: var(--main-color);
+}
+.footer .column.is-7 {
+    border-left: 2px solid var(--main-color);
+    padding-left: 0.5rem;
+    margin-left: .25rem;
+}
+.footer .social1{
+    width: 44px;
+    height: 44px;
+    background-color: #e9eff5;
+    text-align: center;
+    margin: 8px 0 0 10px;
+    line-height: 42px;
+    border-radius: 5px;
+    transition: 0.5s;
+    border: 1px solid var(--logogold30);
+}
+.footer .social1 i{
+    padding: 0;
+    color: var(--logogold30);
+    transition: 0.5s;
+}
+.footer .social1:hover{
+    background-color: var(--logogold60);
+    border: 1px solid var(--logogold60);
+}
+.footer .social1:hover i{
+    color: #e9eff5;
+}
+.footer .subtitle.is-5 {
+    font-weight: 600;
+    margin-bottom: 1rem;
+}
+.footer .column li {
+    margin-bottom: 0.8rem;
+}
+.footer .column li a {
+    color: #535d75;
+}
+.footer .column li:hover a {
+    color: var(--main-color);
+}
+.footer li img {
+    width: 50px;
+    border-radius: 5px;
+}
+
+.licens {
+    background-color: #1e1d18;
+    padding: 25px 0;
+}
+.licens p{
+    color: #c6c2b5;
+}
+.licens a{
+    color: var(--logogold30);
+}
+.licens a:hover{
+    color: var(--logogold60);
 }
