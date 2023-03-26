@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html dir="rtl" lang="ar">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>منصة مستر محمد رضوان </title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel="icon" type="image/png" href="/assets/images/logos/Vector-Presenting-to-smart-board.png"/>
+
+    <link rel='stylesheet' type='text/css' media='screen' href='/assets/style/main.css'>
+    <link rel='stylesheet' type='text/css' media='screen' href='/assets/style/all.min.css'>
+    <link rel='stylesheet' type='text/css' media='screen' href='/assets/style/bulma-rtl.css'>
+
+    <script src='/assets/javascript/main.js' defer></script>
+    <script src='/assets/javascript/navFooterLicenes.js' defer></script>
+
+</head>
+<body>
+
+    <div class="columns is-reversed lectViews contenterBox">
+        <aside class="menu column">
+            <div class="ico" onclick="showLects()"><i class="fa-solid fa-bars"></i></div>
+            <a href="/sdashboard/QA/" class="menu-label"><p><i class="fa-solid fa-clipboard-question"></i> الاسئلة</p></a>
+            <a href="/sdashboard/sData" class="menu-label active"><p><i class="fa-solid fa-clipboard-user"></i> بيانات الطالب</p></a>
+            <a href="/sdashboard/sheetsOrder" class="menu-label"><p><i class="fa-solid fa-boxes-stacked"></i> طلبات الملازم</p></a>
+        </aside>
+
+        <div class="column qa sData">
+            <div class="block">
+                <div class="mytabs">
+                    <div class="tab active">
+                        <h3 class="title is-3 has-text-centered">بيانات الطالب:</h3>
+                        <div class="field columns">
+                            <div class="column is-4">
+                                <label class="label">اسم الطالب:</label>
+                                <div class="control">
+                                    <input class="input is-gold" idoI="0" type="text" placeholder="" value="اسم الطالب">
+                                    <button class="button is-bg-red enter hide" ido="0">تغيير الاسم</button>
+                                </div>
+                            </div>
+                            <div class="column is-4">
+                                <label class="label">الكود:</label>
+                                <div class="control">
+                                    <input class="input" type="text" value="#78432" disabled>
+                                </div>
+                            </div>
+                            <div class="column is-4">
+                                <label class="label">الايميل:</label>
+                                <div class="control">
+                                    <input class="input is-gold" idoI="1" type="text" placeholder="" value="hamza665@gmail.com">
+                                    <button class="button is-bg-red enter hide" ido="1">تغيير الايميل</button>
+                                </div>
+                                <p class="help textsF">حالة تأكيد الايميل: 
+                                    <span class="emailVerify is-size-7 has-text-weight-semibold has-text-primary"> نعم</span>
+                                </p>
+                            </div>
+                        </div>
+                    
+                        <h2 class="title is-5">كلمة المرور:</h2>
+                        <div class="field columns">
+                            <div class="column is-4">
+                                <label class="label">كلمة المرور القديمة:</label>
+                                <div class="control">
+                                    <input class="input is-gold" type="text" placeholder="كلمة المرور القديمه">
+                                </div>
+                            </div>
+                            <div class="column is-4">
+                                <label class="label">كلمة المرور الجديدة:</label>
+                                <div class="control">
+                                    <input class="input is-gold" type="text" placeholder="كلمة المرور الجديدة">
+                                </div>
+                            </div>
+                            <div class="column is-4">
+                                <label class="label">تأكيد كلمة المرور الجديدة:</label>
+                                <div class="control">
+                                    <input class="input is-gold" type="text" placeholder="تأكيد كلمة المرور الجديدة">
+                                </div>
+                            </div>
+                        </div>
+                        <button class="button is-gold under">تغيير كلمة المرور</button>  
+                        <h2 class="title is-5">ارقام الطالب:</h2>
+                        <div class="field columns">
+                            <div class="column is-4">
+                                <label class="label">رقم الطالب:</label>
+                                <div class="control">
+                                    <input class="input is-gold" idoI="2" type="text" placeholder="" value="055314313">
+                                    <button type="submit" class="button is-bg-red enter hide" ido="2">تغيير رقم الهاتف</button>
+                                </div>
+                            </div>
+                            <div class="column is-4">
+                                <label class="label">رقم الاب:</label>
+                                <div class="control">
+                                    <input class="input" type="text" placeholder="" value="0550356543" disabled>
+                                </div>
+                            </div>
+                            <div class="column is-4">
+                                <label class="label">رقم الام:</label>
+                                <div class="control">
+                                    <input class="input" type="text" placeholder="" value="0550459843" disabled>
+                                </div>
+                            </div>
+                        </div>
+                    
+                        <div class="field">
+                            <label class="label is-size-5">الصف الدراسي: 
+                                <span class="classroom is-size-5 has-text-weight-semibold is-gold"> الاول ثانوي</span>
+                            </label>
+                            <label class="label is-size-5">تاريخ الانضمام: 
+                                <span class="joinDate is-size-5 has-text-weight-semibold is-gold"> 2020/9/3</span>
+                            </label>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    
+
+</body>
+</html>
+
+
+

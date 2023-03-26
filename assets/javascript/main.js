@@ -79,5 +79,21 @@ function showtab(num){
 
 
 
+try{
+    document.querySelectorAll("[idoI]").forEach((ele)=>{
+        ele.addEventListener('change', (e)=>{
+            ind = ele.getAttribute("idoI")
+            document.querySelector(`[ido = "${ind}"]`).classList.remove("hide")
+        })
+    })    
+}catch(e){
 
+}
 
+try{
+    $(document).ready(function() {
+        $('#orders').DataTable();
+    } );
+}catch(e){
+
+}

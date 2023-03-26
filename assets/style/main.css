@@ -1605,7 +1605,8 @@ tbody * {
 }
 
 .qa{
-    background-image: linear-gradient(to bottom right, var(--bDarkbg), var(--bLightbg));
+    /* background-image: linear-gradient(to bottom right, var(--bDarkbg), var(--bLightbg)); */
+    background-color: var(--greenLL);
     padding-top: 60px;
     padding-bottom: 60px;
     margin-bottom: 0 !important;
@@ -1833,4 +1834,93 @@ footer img {
 }
 .error .button{
     color: var(--whiteBg) !important;
+}
+
+
+
+
+
+
+
+.lectViews.columns:not(:last-child) {
+    margin-bottom: 0 !important;
+}
+
+
+.button.is-bg-red.enter {
+    padding: 19px 10px !important;
+    font-size: 14px;
+    position: absolute;
+    left: 0;
+    background-color: var(--logogold30);
+    border-color: var(--logogold30);
+}
+.under {
+    margin-bottom: 25px;
+    margin-top: -10px;
+    font-size: 14px;
+}
+
+.column.qa.sData {
+    padding-top: 50px;
+    padding-bottom: 40px;
+}
+.sData .label{
+    color: #e6e6e6 !important;
+    font-weight: 400;
+}
+.sData .button{
+    opacity: 1;
+    transition: opacity 0.5s;
+    pointer-events: all;
+}
+.button.hide{
+    opacity: 0;
+    pointer-events: none;
+}
+.classroom, .joinDate  {
+    color: var(--logogold60);
+}
+.contenterBox .block{
+    margin-left: 30px;
+    margin-right: 20px;
+}
+.contenterBox aside p{
+    font-size: 15px;
+    padding: 5px;
+}
+.column.is-one-half {
+    margin-top: 10px !important;
+    margin-bottom: 10px !important;
+    color: #d5d5d5;
+}
+.pagination-list {
+    direction: ltr;
+}
+.dataTables_filter label{
+    display: flex;
+    justify-content: space-between;
+}
+.dataTables_filter label .input {
+    margin-right: 20px;
+}
+.dataTables_length label {
+    display: flex;
+    align-items: center;
+}
+.dataTables_length label div{
+    margin-right: 20px;
+    margin-left: 20px;
+}
+.sorting {
+    font-weight: 400;
+}
+.column.qa {
+    min-height: 100vh;
+}
+
+@media (max-width:806px){
+    .lectViews.columns{
+        display: flex;
+    }
 }

@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html dir="rtl" lang="ar">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>منصة مستر محمد رضوان </title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel="icon" type="image/png" href="/assets/images/logos/Vector-Presenting-to-smart-board.png"/>
+
+    <link rel='stylesheet' type='text/css' media='screen' href='/assets/style/main.css'>
+    <link rel='stylesheet' type='text/css' media='screen' href='/assets/style/all.min.css'>
+    <link rel='stylesheet' type='text/css' media='screen' href='/assets/style/bulma-rtl.css'>
+
+    <script src='/assets/javascript/main.js' defer></script>
+    <script src='/assets/javascript/navFooterLicenes.js' defer></script>
+
+</head>
+<body>
+
+    <div class="columns is-reversed lectViews contenterBox">
+        <aside class="menu column">
+            <div class="ico" onclick="showLects()"><i class="fa-solid fa-bars"></i></div>
+            <a href="/sdashboard/QA/" class="menu-label"><p><i class="fa-solid fa-clipboard-question"></i> الاسئلة</p></a>
+            <a href="/sdashboard/sData" class="menu-label"><p><i class="fa-solid fa-clipboard-user"></i> بيانات الطالب</p></a>
+            <a href="/sdashboard/sheetsOrder" class="menu-label active"><p><i class="fa-solid fa-boxes-stacked"></i> طلبات الملازم</p></a>
+        </aside>
+
+        <div class="column qa sData">
+            <div class="block">
+                <div class="mytabs">
+                    <div class="tab active">
+                        <h3 class="title is-3 has-text-centered">طلبات الملازم</h3>
+                        <table id="orders" class="table is-striped has-text-centered" style="width:100%">
+                            <thead>
+                                <tr>
+                                    <th>رقم تتبع الطلب</th>
+                                    <th>حالة الطلب</th>
+                                    <th>لينك تتبع الطلب</th>
+                                    <th>عدد الملازم</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>-</td>
+                                    <td>لم يتم دفع المبلغ المطلوب وهو <span>205</span> جنيه, لتأكيد الطلب اضغط: <a href="">هنا</a></td>
+                                    <td>-</td>
+                                    <td>1</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    
+
+</body>
+</html>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" charset="utf-8"></script>
+<script type="text/javascript" src="https://cdn.datatables.net/v/dt/dt-1.10.25/datatables.min.js"></script>
+<script type="text/javascript" src="https://code.jquery.com/jquery-3.5.1.js"></script>
+<script type="text/javascript" src="https://cdn.datatables.net/1.10.25/js/jquery.dataTables.min.js"></script>
+<script type="text/javascript" src="https://cdn.datatables.net/1.10.25/js/dataTables.bulma.min.js"></script>
+
