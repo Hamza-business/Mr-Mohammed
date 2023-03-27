@@ -1924,3 +1924,41 @@ footer img {
         display: flex;
     }
 }
+
+.noactive ~ .column.qa {
+    padding-right: 40px;
+}
+.dsboard .columns ~ hr{
+    background-color: var(--logogold30);
+}
+.dsboard .columns .card {
+    padding: 1px 15px 12px;
+}
+
+.card.is-dark {
+    background-color: var(--bLightbg);
+    border: 1px solid var(--logogold30);
+}
+.card.is-dark hr{
+    background-color: #d6d6d6;
+}
+.card.is-dark .card-content .is-size-5, .card.is-dark .card-content .is-size-5 i{
+    color: var(--logogold30);
+}
+.card.is-dark .card-content .is-size-4{
+    color: var(--whiteBg);
+}
+
+.card.is-gold {
+    background-color: var(--logogold30);
+    border: 1px solid var(--bLightbg);
+}
+.card.is-gold hr{
+    background-color: var(--bLightbg);
+}
+.card.is-gold .card-content .is-size-5, .card.is-gold .card-content .is-size-5 i{
+    color: var(--bLightbg);
+}
+.card.is-gold .card-content .is-size-4{
+    color: var(--whiteBg);
+}
